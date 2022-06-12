@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="youss" on="05/05/22||21:05:33" using="Simscape Multibody Link Version 7.4" from="Autodesk Inventor 2021 (Build 250183000, 183)"/>
+<ModelUnits mass="lbmass" length="millimeter"/>
+<DataUnits mass="kilogram" length="centimeter"/>
+<RootAssembly name="RR.iam" uid="RR.iam_{D6C08F36-44EA-BFDA-C48E-419DE70CBBCE}" version="{72BF97B1-F225-CC6B-0A78-553637334AE0}">
+<AssemblyFile name="RR.iam" type="Inventor Assembly"/>
+<InstanceTree>
+<Instance name="Base v3:1" grounded="true" uid="Base v3:1" entityUid="Base v3.ipt_{30157DD4-45B2-A190-4B2A-17AF3B2964B0}">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.70196078431372544" g="0" b="0" a="1"/>
+<Diffuse r="0.70196078431372544" g="0" b="0" a="1"/>
+<Specular r="1" g="1" b="1" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.52299999237060546</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="Motor v2:1" uid="Motor v2:1" entityUid="Motor v2.ipt_{9500E784-41EC-A804-289F-B3AC676CC6FD}">
+<Transform>
+<Rotation>1.0000000000000002 0 0 0 -0.34202014332567271 -0.93969262078591975 0 0.93969262078591975 -0.34202014332567271</Rotation>
+<Translation>-3.0000000000000084 49.999999999999993 -34.999999999999993</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0" g="0.49019607843137253" b="0.6588235294117647" a="1"/>
+<Diffuse r="0" g="0.49019607843137253" b="0.6588235294117647" a="1"/>
+<Specular r="1" g="1" b="1" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.52299999237060546</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="Motor v2:2" uid="Motor v2:2" entityUid="Motor v2.ipt_{9500E784-41EC-A804-289F-B3AC676CC6FD}">
+<Transform>
+<Rotation>1 0 0 0 0.76604444311897801 0.64278760968653992 0 -0.64278760968653992 0.76604444311897801</Rotation>
+<Translation>-3.0000000000000036 84.202014332566947 -128.96926207859093</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0" g="0.49019607843137253" b="0.6588235294117647" a="1"/>
+<Diffuse r="0" g="0.49019607843137253" b="0.6588235294117647" a="1"/>
+<Specular r="1" g="1" b="1" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.52299999237060546</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="End v2:1" uid="End v2:1" entityUid="End v2.ipt_{44B94EF0-4667-A0F7-B605-3C90D068A70A}">
+<Transform>
+<Rotation>0.99999999999999978 0 7.2164496600635471e-16 0 0.64278760968654702 -0.76604444311898701 0 0.76604444311898634 0.64278760968654769</Rotation>
+<Translation>-6.3948846218409017e-14 151.16464449916737 -204.73868969403054</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.7803921568627451" g="0.5607843137254902" b="0.10980392156862745" a="1"/>
+<Diffuse r="0.7803921568627451" g="0.5607843137254902" b="0.10980392156862745" a="1"/>
+<Specular r="0.7803921568627451" g="0.5607843137254902" b="0.10980392156862745" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.51325000762939454</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="Middle v2:1" uid="Middle v2:1" entityUid="Middle v2.ipt_{C2612A30-42A4-AD4D-9DD7-1A89FCFEBD2A}">
+<Transform>
+<Rotation>0 -1 0 0.93969262078590854 0 -0.3420201433256686 0.3420201433256686 0 0.93969262078590854</Rotation>
+<Translation>35 64.095389311788622 -29.869697850114971</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.50196078431372548" g="0" b="0.50196078431372548" a="1"/>
+<Diffuse r="0.50196078431372548" g="0" b="0.50196078431372548" a="1"/>
+<Specular r="1" g="1" b="1" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.51500000000000001</Shininess>
+</VisualProperties>
+</Instance>
+</InstanceTree>
+<Constraints>
+</Constraints>
+<Joints>
+<Weld name="Rigid:1">
+<BaseFrame>
+<InstancePath>
+<Uid>Middle v2:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>-1 0 0 0 0 1 0 1 0</Rotation>
+<Translation>-15 15 0</Translation>
+</Transform>
+</BaseFrame>
+<FollowerFrame>
+<InstancePath>
+<Uid>Motor v2:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>0 0 -1 0 1 0 1 0 0</Rotation>
+<Translation>23 0 0</Translation>
+</Transform>
+</FollowerFrame>
+</Weld>
+<Revolute name="Rotational:1">
+<BaseFrame>
+<InstancePath>
+<Uid>Base v3:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>0 0 1 -1 0 0 0 -1 0</Rotation>
+<Translation>20 50 -35</Translation>
+</Transform>
+</BaseFrame>
+<FollowerFrame>
+<InstancePath>
+<Uid>Middle v2:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>1 0 0 0 0 -1 0 1 0</Rotation>
+<Translation>-15 15 0</Translation>
+</Transform>
+</FollowerFrame>
+</Revolute>
+<Weld name="Rigid:2">
+<BaseFrame>
+<InstancePath>
+<Uid>End v2:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>0 0 1 1 0 0 0 1 0</Rotation>
+<Translation>20 15 100</Translation>
+</Transform>
+</BaseFrame>
+<FollowerFrame>
+<InstancePath>
+<Uid>Motor v2:2</Uid>
+</InstancePath>
+<Transform>
+<Rotation>0 0 1 0 -1 0 1 0 0</Rotation>
+<Translation>23 0 0</Translation>
+</Transform>
+</FollowerFrame>
+</Weld>
+<Revolute name="Rotational:2">
+<BaseFrame>
+<InstancePath>
+<Uid>Middle v2:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>-1 0 0 0 0 1 0 1 0</Rotation>
+<Translation>-15 15 -100</Translation>
+</Transform>
+</BaseFrame>
+<FollowerFrame>
+<InstancePath>
+<Uid>Motor v2:2</Uid>
+</InstancePath>
+<Transform>
+<Rotation>0 0 -1 0 1 0 1 0 0</Rotation>
+<Translation>23 0 0</Translation>
+</Transform>
+</FollowerFrame>
+</Revolute>
+</Joints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="Base v3.ipt" uid="Base v3.ipt_{30157DD4-45B2-A190-4B2A-17AF3B2964B0}" version="{F89C5FDF-EFF1-B61E-2235-2CB197119E4F}">
+<PartFile name="Base v3.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>699.93952469496219</Mass>
+<CenterOfMass>20 49.99999999998446 -12.064804267202803</CenterOfMass>
+<Inertia>583144.64034328843 153138.2246144324 631222.65546157071 -2.4950504302978515e-07 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Base v3_ipt_93ad267e.STEP" type="STEP"/>
+</Part>
+<Part name="End v2.ipt" uid="End v2.ipt_{44B94EF0-4667-A0F7-B605-3C90D068A70A}" version="{D44728CE-6CE9-F9A6-190D-0DDCF5F41B61}">
+<PartFile name="End v2.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>872.63952469496223</Mass>
+<CenterOfMass>20 14.999999999987534 46.835435839080056</CenterOfMass>
+<Inertia>737527.19717483665 793828.28144597914 190968.48879490496 5.7828426361083984e-07 -1.1920928955078125e-10 2.9802322387695313e-11</Inertia>
+</MassProperties>
+<GeometryFile name="End v2_ipt_916e0310.STEP" type="STEP"/>
+</Part>
+<Part name="Middle v2.ipt" uid="Middle v2.ipt_{C2612A30-42A4-AD4D-9DD7-1A89FCFEBD2A}" version="{AA88C25B-4F65-D688-9371-AAC9628C0B82}">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Middle v2.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>789.73257036604809</Mass>
+<CenterOfMass>-14.999999999834687 14.999999999999996 -50</CenterOfMass>
+<Inertia>970229.57476240059 972180.33835709665 120410.64914960325 -3.5762786865234376e-10 2.384185791015625e-10 -5.9604644775390626e-11</Inertia>
+</MassProperties>
+<GeometryFile name="Middle v2_ipt_9bc35a0a.STEP" type="STEP"/>
+</Part>
+<Part name="Motor v2.ipt" uid="Motor v2.ipt_{9500E784-41EC-A804-289F-B3AC676CC6FD}" version="{E823C106-0570-6D69-8D9F-8BBA2480552C}">
+<PartFile name="Motor v2.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>88.806069892782062</Mass>
+<CenterOfMass>23.006525965009722 -0.0011108014767606876 0.0016662038322685961</CenterOfMass>
+<Inertia>5307.3703880792837 25480.67171519906 25480.179310262851 0.59171169172148108 -3.4763061880190302 2.3175374592369082</Inertia>
+</MassProperties>
+<GeometryFile name="Motor v2_ipt_b82e1599.STEP" type="STEP"/>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
